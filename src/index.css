@@ -1,0 +1,149 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #000000;
+}
+.mx-auto {
+  margin: 0 auto;
+}
+.py-100 {
+  padding: 100px 0;
+}
+/*------------------------------------
+  Layout
+------------------------------------*/
+/* container */
+.container,
+.container-fluid {
+  width: 100%;
+  padding-right: var(--mh-gutter-x, 0.75rem);
+  padding-left: var(--mh-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* row */
+.row {
+  --mh-gutter-x: 1.5rem;
+  --mh-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--mh-gutter-y) * -1);
+  margin-right: calc(var(--mh-gutter-x) / -2);
+  margin-left: calc(var(--mh-gutter-x) / -2);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--mh-gutter-x) / 2);
+  padding-left: calc(var(--mh-gutter-x) / 2);
+  margin-top: var(--mh-gutter-y);
+}
+
+/* col-lg- */
+@media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%;
+  }
+}
+article {
+  margin-bottom: 30px;
+  background-color: #303030;
+  border-radius: 6px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+header h4 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 30px;
+  border-top: 1px solid #000;
+}
+
+button.btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.heading {
+  font-size: calc(1.475rem + 2.7vw);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #ff0066;
+}
+@media (min-width: 1200px) {
+  .heading {
+    font-size: 3.5rem;
+  }
+}
